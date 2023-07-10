@@ -26,19 +26,19 @@ class HomeViewController: UIViewController {
                 // Handle the retrieved characters
                 print(characters)
                 self.charInfo = characters
-                DispatchQueue.main.async {
-                    // Update TableView with the data
-                    self.charactersTableView.reloadData()
-                }
             } else if let error = error {
                 // Handle the error
                 print("Error retrieving characters: \(error)")
+            }
+            DispatchQueue.main.async {
+                // Update TableView with the data
+                self.charactersTableView.reloadData()
             }
         }
     }
 }
 
-extension HomeViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.charInfo.count
     }
@@ -71,8 +71,13 @@ extension HomeViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let selectedCharacter = charInfo[indexPath.row] // Assuming you have an array of characters
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let characterDetailsVC = storyboard.instantiateViewController(withIdentifier: "CharacterDetailsViewController") as! CharacterDetailsViewController
+        characterDetailsVC.character = selectedCharacter
+        navigationController?.pushViewController(characterDetailsVC, animated: true)
     }
+
 }
 
 

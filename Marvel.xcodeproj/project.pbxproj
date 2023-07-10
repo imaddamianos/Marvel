@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		043B99112A5C77720015D6F0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 043B99102A5C77720015D6F0 /* AlamofireImage */; };
 		043B99142A5C788F0015D6F0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B99132A5C788F0015D6F0 /* ImageDownloader.swift */; };
+		043B99162A5C80530015D6F0 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B99152A5C80530015D6F0 /* CharacterDetailsViewController.swift */; };
 		0474ED9B2A5C343300989805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9A2A5C343300989805 /* AppDelegate.swift */; };
 		0474ED9D2A5C343300989805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9C2A5C343300989805 /* SceneDelegate.swift */; };
 		0474ED9F2A5C343300989805 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9E2A5C343300989805 /* HomeViewController.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		043B99132A5C788F0015D6F0 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		043B99152A5C80530015D6F0 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		0474ED972A5C343300989805 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474ED9A2A5C343300989805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0474ED9C2A5C343300989805 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				0474EDA52A5C343500989805 /* LaunchScreen.storyboard */,
 				0474EDA82A5C343500989805 /* Info.plist */,
 				0474EDE62A5C484D00989805 /* md5.swift */,
+				043B99152A5C80530015D6F0 /* CharacterDetailsViewController.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0474ED9F2A5C343300989805 /* HomeViewController.swift in Sources */,
+				043B99162A5C80530015D6F0 /* CharacterDetailsViewController.swift in Sources */,
 				043B99142A5C788F0015D6F0 /* ImageDownloader.swift in Sources */,
 				0474EDE22A5C478600989805 /* SeriesSummary.swift in Sources */,
 				0474EDDE2A5C46E900989805 /* Image.swift in Sources */,
@@ -554,8 +558,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,8 +587,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
