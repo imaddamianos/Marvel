@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsd" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lv4-fa-y7E">
-                        <rect key="frame" x="130" y="-2" width="175" height="139"/>
+                        <rect key="frame" x="135" y="-2" width="170" height="139"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -25,18 +25,18 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Loq-ga-dgO">
                         <rect key="frame" x="15" y="15" width="105" height="105"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="Loq-ga-dgO" secondAttribute="height" multiplier="1:1" id="E9Z-tX-wez"/>
+                            <constraint firstAttribute="width" secondItem="Loq-ga-dgO" secondAttribute="height" multiplier="1:1" id="din-vs-4qx"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Lv4-fa-y7E" firstAttribute="leading" secondItem="Loq-ga-dgO" secondAttribute="trailing" constant="10" id="EdL-2C-DEl"/>
-                    <constraint firstItem="Loq-ga-dgO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KQl-U0-6hp"/>
-                    <constraint firstItem="Loq-ga-dgO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="P7W-8E-m9r"/>
+                    <constraint firstItem="Lv4-fa-y7E" firstAttribute="leading" secondItem="Loq-ga-dgO" secondAttribute="trailing" constant="15" id="277-OV-jK6"/>
+                    <constraint firstItem="Loq-ga-dgO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="MoP-dU-VIa"/>
                     <constraint firstAttribute="trailing" secondItem="Lv4-fa-y7E" secondAttribute="trailing" constant="15" id="SoZ-Yl-4YL"/>
                     <constraint firstItem="Lv4-fa-y7E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-13" id="UDG-Uy-Jtc"/>
-                    <constraint firstAttribute="bottom" secondItem="Loq-ga-dgO" secondAttribute="bottom" constant="15" id="ayu-BR-m6Z"/>
+                    <constraint firstItem="Loq-ga-dgO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Y0k-pP-rvL"/>
                     <constraint firstItem="Lv4-fa-y7E" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jgg-Rn-YrR"/>
+                    <constraint firstAttribute="bottom" secondItem="Loq-ga-dgO" secondAttribute="bottom" constant="15" id="tHW-lO-alp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

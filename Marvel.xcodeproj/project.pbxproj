@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		043B99112A5C77720015D6F0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 043B99102A5C77720015D6F0 /* AlamofireImage */; };
+		043B99142A5C788F0015D6F0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B99132A5C788F0015D6F0 /* ImageDownloader.swift */; };
 		0474ED9B2A5C343300989805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9A2A5C343300989805 /* AppDelegate.swift */; };
 		0474ED9D2A5C343300989805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9C2A5C343300989805 /* SceneDelegate.swift */; };
 		0474ED9F2A5C343300989805 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9E2A5C343300989805 /* HomeViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043B99132A5C788F0015D6F0 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		0474ED972A5C343300989805 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474ED9A2A5C343300989805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0474ED9C2A5C343300989805 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043B99122A5C78650015D6F0 /* Alomafire */ = {
+			isa = PBXGroup;
+			children = (
+				043B99132A5C788F0015D6F0 /* ImageDownloader.swift */,
+			);
+			path = Alomafire;
+			sourceTree = "<group>";
+		};
 		0474ED8E2A5C343300989805 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		0474ED992A5C343300989805 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				043B99122A5C78650015D6F0 /* Alomafire */,
 				04CAA14B2A5C6B8200690D17 /* Cells */,
 				0474EDE32A5C47D000989805 /* Options */,
 				0474EDD62A5C442200989805 /* Models */,
@@ -347,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0474ED9F2A5C343300989805 /* HomeViewController.swift in Sources */,
+				043B99142A5C788F0015D6F0 /* ImageDownloader.swift in Sources */,
 				0474EDE22A5C478600989805 /* SeriesSummary.swift in Sources */,
 				0474EDDE2A5C46E900989805 /* Image.swift in Sources */,
 				0474EDE02A5C471500989805 /* SeriesList.swift in Sources */,

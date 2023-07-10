@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    let imageDownloader = ImageDownloader()
     let marvelAPI = MarvelAPI.shared
     var charInfo: [Character] = []
     
@@ -43,6 +45,19 @@ extension HomeViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ThumbCharacterTableViewCell.identifier, for: indexPath) as? ThumbCharacterTableViewCell else { fatalError("xib doesn't exist") }
+        
+        imageDownloader.downloadImage(from: (charInfo[indexPath.row].thumbnail?.url)!) { image in
+            if let image = image {
+                // Handle the downloaded image
+                DispatchQueue.main.async {
+                    // Update the UI with the downloaded image
+                    cell.charImg.image = image
+                }
+            } else {
+                // Handle the case where image download failed
+                print("Failed to download image.")
+            }
+        }
         
 //        cell.charImg.image = charInfo[indexPath.row].thumbnail
             cell.charNameLbl.text = charInfo[indexPath.row].name
