@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		0474ED9B2A5C343300989805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9A2A5C343300989805 /* AppDelegate.swift */; };
 		0474ED9D2A5C343300989805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9C2A5C343300989805 /* SceneDelegate.swift */; };
-		0474ED9F2A5C343300989805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9E2A5C343300989805 /* ViewController.swift */; };
+		0474ED9F2A5C343300989805 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9E2A5C343300989805 /* HomeViewController.swift */; };
 		0474EDA22A5C343300989805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0474EDA02A5C343300989805 /* Main.storyboard */; };
 		0474EDA42A5C343500989805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474EDA32A5C343500989805 /* Assets.xcassets */; };
 		0474EDA72A5C343500989805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0474EDA52A5C343500989805 /* LaunchScreen.storyboard */; };
 		0474EDB22A5C343500989805 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDB12A5C343500989805 /* MarvelTests.swift */; };
 		0474EDBC2A5C343600989805 /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDBB2A5C343600989805 /* MarvelUITests.swift */; };
 		0474EDBE2A5C343600989805 /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDBD2A5C343600989805 /* MarvelUITestsLaunchTests.swift */; };
+		0474EDCC2A5C365E00989805 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0474EDCB2A5C365E00989805 /* FirebaseAnalytics */; };
+		0474EDCE2A5C365E00989805 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0474EDCD2A5C365E00989805 /* FirebaseCrashlytics */; };
+		0474EDD02A5C370C00989805 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0474EDCF2A5C370C00989805 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		0474ED972A5C343300989805 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474ED9A2A5C343300989805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0474ED9C2A5C343300989805 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0474ED9E2A5C343300989805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0474ED9E2A5C343300989805 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0474EDA12A5C343300989805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0474EDA32A5C343500989805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0474EDA62A5C343500989805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		0474EDB72A5C343600989805 /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474EDBB2A5C343600989805 /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		0474EDBD2A5C343600989805 /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0474EDCF2A5C370C00989805 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0474EDCC2A5C365E00989805 /* FirebaseAnalytics in Frameworks */,
+				0474EDCE2A5C365E00989805 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +105,10 @@
 		0474ED992A5C343300989805 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				0474EDCF2A5C370C00989805 /* GoogleService-Info.plist */,
 				0474ED9A2A5C343300989805 /* AppDelegate.swift */,
 				0474ED9C2A5C343300989805 /* SceneDelegate.swift */,
-				0474ED9E2A5C343300989805 /* ViewController.swift */,
+				0474ED9E2A5C343300989805 /* HomeViewController.swift */,
 				0474EDA02A5C343300989805 /* Main.storyboard */,
 				0474EDA32A5C343500989805 /* Assets.xcassets */,
 				0474EDA52A5C343500989805 /* LaunchScreen.storyboard */,
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = Marvel;
+			packageProductDependencies = (
+				0474EDCB2A5C365E00989805 /* FirebaseAnalytics */,
+				0474EDCD2A5C365E00989805 /* FirebaseCrashlytics */,
+			);
 			productName = Marvel;
 			productReference = 0474ED972A5C343300989805 /* Marvel.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 0474ED8E2A5C343300989805;
+			packageReferences = (
+				0474EDCA2A5C365E00989805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0474ED982A5C343300989805 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0474EDA72A5C343500989805 /* LaunchScreen.storyboard in Resources */,
+				0474EDD02A5C370C00989805 /* GoogleService-Info.plist in Resources */,
 				0474EDA42A5C343500989805 /* Assets.xcassets in Resources */,
 				0474EDA22A5C343300989805 /* Main.storyboard in Resources */,
 			);
@@ -258,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0474ED9F2A5C343300989805 /* ViewController.swift in Sources */,
+				0474ED9F2A5C343300989805 /* HomeViewController.swift in Sources */,
 				0474ED9B2A5C343300989805 /* AppDelegate.swift in Sources */,
 				0474ED9D2A5C343300989805 /* SceneDelegate.swift in Sources */,
 			);
@@ -602,6 +617,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0474EDCA2A5C365E00989805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0474EDCB2A5C365E00989805 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0474EDCA2A5C365E00989805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0474EDCD2A5C365E00989805 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0474EDCA2A5C365E00989805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0474ED8F2A5C343300989805 /* Project object */;
 }
