@@ -28,10 +28,14 @@ class HomeViewController: UIViewController {
                 self.charInfo = characters
             } else if let error = error {
                 // Handle the error
+                DispatchQueue.main.async {
+                    GFunction.shared.showCustomAlert(title: "Error", message: "API request fail, check internet Connection", buttonText: "OK")
+                }
                 print("Error retrieving characters: \(error)")
             }
             DispatchQueue.main.async {
                 // Update TableView with the data
+                GFunction.shared.showSuccess()
                 GFunction.shared.removeLoader()
                 self.charactersTableView.reloadData()
             }
