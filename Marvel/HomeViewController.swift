@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         // Register TableView Cell
         self.charactersTableView.register(ThumbCharacterTableViewCell.nib, forCellReuseIdentifier: ThumbCharacterTableViewCell.identifier)
         
-        
+        GFunction.shared.addLoader("Heroes are gettings ready !")
         marvelAPI.characterService.getAllCharacters { characters, error in
             if let characters = characters {
                 // Handle the retrieved characters
@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
             }
             DispatchQueue.main.async {
                 // Update TableView with the data
+                GFunction.shared.removeLoader()
                 self.charactersTableView.reloadData()
             }
         }
