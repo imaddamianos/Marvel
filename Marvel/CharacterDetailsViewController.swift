@@ -16,7 +16,13 @@ class CharacterDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Update UI with character details
+        
+        setupView()
+        
+    }
+    
+    func setupView(){
+        GFunction.shared.addLoader("Loading details")
                if let character = character {
                    nameLabel.text = character.name
                    descriptionLabel.text = character.description
@@ -24,7 +30,7 @@ class CharacterDetailsViewController: UIViewController {
                        if let image = image {
                            // Handle the downloaded image
                            DispatchQueue.main.async {
-                               // Update the UI with the downloaded image
+                               GFunction.shared.removeLoader()
                                self.thumbnailImageView.image = image
                            }
                        } else {
@@ -32,11 +38,7 @@ class CharacterDetailsViewController: UIViewController {
                            print("Failed to download image.")
                        }
                    }
-                   // Load thumbnail image using character.thumbnail property
-                   // Set the image into thumbnailImageView
-                   // Example: thumbnailImageView.image = UIImage(named: character.thumbnail)
                }
-        
     }
 
 }

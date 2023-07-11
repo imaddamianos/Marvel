@@ -180,12 +180,12 @@
 				0474ED9A2A5C343300989805 /* AppDelegate.swift */,
 				0474ED9C2A5C343300989805 /* SceneDelegate.swift */,
 				0474ED9E2A5C343300989805 /* HomeViewController.swift */,
+				043B99152A5C80530015D6F0 /* CharacterDetailsViewController.swift */,
 				0474EDA02A5C343300989805 /* Main.storyboard */,
 				0474EDA32A5C343500989805 /* Assets.xcassets */,
 				0474EDA52A5C343500989805 /* LaunchScreen.storyboard */,
 				0474EDA82A5C343500989805 /* Info.plist */,
 				0474EDE62A5C484D00989805 /* md5.swift */,
-				043B99152A5C80530015D6F0 /* CharacterDetailsViewController.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
