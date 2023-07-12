@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		042E3E792A5DA3E8005BCFA8 /* GFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E3E782A5DA3E8005BCFA8 /* GFunctions.swift */; };
-		043B99112A5C77720015D6F0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 043B99102A5C77720015D6F0 /* AlamofireImage */; };
 		043B99142A5C788F0015D6F0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B99132A5C788F0015D6F0 /* ImageDownloader.swift */; };
 		043B99162A5C80530015D6F0 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B99152A5C80530015D6F0 /* CharacterDetailsViewController.swift */; };
 		0474ED9B2A5C343300989805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474ED9A2A5C343300989805 /* AppDelegate.swift */; };
@@ -20,8 +19,6 @@
 		0474EDB22A5C343500989805 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDB12A5C343500989805 /* MarvelTests.swift */; };
 		0474EDBC2A5C343600989805 /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDBB2A5C343600989805 /* MarvelUITests.swift */; };
 		0474EDBE2A5C343600989805 /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDBD2A5C343600989805 /* MarvelUITestsLaunchTests.swift */; };
-		0474EDCC2A5C365E00989805 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0474EDCB2A5C365E00989805 /* FirebaseAnalytics */; };
-		0474EDCE2A5C365E00989805 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0474EDCD2A5C365E00989805 /* FirebaseCrashlytics */; };
 		0474EDD02A5C370C00989805 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0474EDCF2A5C370C00989805 /* GoogleService-Info.plist */; };
 		0474EDD22A5C3E6200989805 /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDD12A5C3E6200989805 /* MarvelAPI.swift */; };
 		0474EDD52A5C43E800989805 /* MVLHeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDD42A5C43E800989805 /* MVLHeroesService.swift */; };
@@ -103,9 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0474EDCC2A5C365E00989805 /* FirebaseAnalytics in Frameworks */,
-				0474EDCE2A5C365E00989805 /* FirebaseCrashlytics in Frameworks */,
-				043B99112A5C77720015D6F0 /* AlamofireImage in Frameworks */,
 				FA15A14B97062B36A4FB4FFA /* Pods_Marvel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,9 +282,6 @@
 			);
 			name = Marvel;
 			packageProductDependencies = (
-				0474EDCB2A5C365E00989805 /* FirebaseAnalytics */,
-				0474EDCD2A5C365E00989805 /* FirebaseCrashlytics */,
-				043B99102A5C77720015D6F0 /* AlamofireImage */,
 			);
 			productName = Marvel;
 			productReference = 0474ED972A5C343300989805 /* Marvel.app */;
@@ -904,24 +895,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		043B99102A5C77720015D6F0 /* AlamofireImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 043B990F2A5C77720015D6F0 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
-			productName = AlamofireImage;
-		};
-		0474EDCB2A5C365E00989805 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0474EDCA2A5C365E00989805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		0474EDCD2A5C365E00989805 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0474EDCA2A5C365E00989805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0474ED8F2A5C343300989805 /* Project object */;
 }

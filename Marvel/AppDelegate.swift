@@ -6,8 +6,9 @@
 //
 
 import UIKit
-import FirebaseCore
+//import FirebaseCore
 import Alamofire
+import MyFirebaseSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
