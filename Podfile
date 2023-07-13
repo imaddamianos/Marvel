@@ -8,6 +8,7 @@ target 'Marvel' do
   # Pods for Marvel
 	pod 'ProgressHUD'
   pod 'Alamofire'
+  #pod 'MyPodSDK', :git => 'https://github.com/imaddamianos/MyPodSDK.git'
 
   target 'MarvelTests' do
     inherit! :search_paths
