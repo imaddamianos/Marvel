@@ -32,6 +32,7 @@
 		0474EDE72A5C484D00989805 /* md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474EDE62A5C484D00989805 /* md5.swift */; };
 		04CAA14E2A5C6C2700690D17 /* ThumbCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAA14C2A5C6C2700690D17 /* ThumbCharacterTableViewCell.swift */; };
 		04CAA14F2A5C6C2700690D17 /* ThumbCharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA14D2A5C6C2700690D17 /* ThumbCharacterTableViewCell.xib */; };
+		04DB75272A601E3000BB687E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 04DB75262A601E3000BB687E /* AlamofireImage */; };
 		06B26B353BA83FA2540C7DFD /* Pods_MarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60851DD0E14D03576095F6B6 /* Pods_MarvelTests.framework */; };
 		2B38578C5B01D637818DDD36 /* Pods_Marvel_MarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5F64A1D26E5B8105275B3 /* Pods_Marvel_MarvelUITests.framework */; };
 		FA15A14B97062B36A4FB4FFA /* Pods_Marvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489D6F6679969DCF87146570 /* Pods_Marvel.framework */; };
@@ -101,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA15A14B97062B36A4FB4FFA /* Pods_Marvel.framework in Frameworks */,
+				04DB75272A601E3000BB687E /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +284,7 @@
 			);
 			name = Marvel;
 			packageProductDependencies = (
+				04DB75262A601E3000BB687E /* AlamofireImage */,
 			);
 			productName = Marvel;
 			productReference = 0474ED972A5C343300989805 /* Marvel.app */;
@@ -895,6 +898,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04DB75262A601E3000BB687E /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 043B990F2A5C77720015D6F0 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0474ED8F2A5C343300989805 /* Project object */;
 }
